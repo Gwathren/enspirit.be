@@ -1,0 +1,14 @@
+@import "brand";
+@import "fonts";
+@import "forms";
+@import "layout";
+@import "text";
+
+/* body */
+body {
+  background-image: $gradient-home-body;
+}
+/* header */
+.header {
+  background-image: $gradient-home;
+}

@@ -1,0 +1,88 @@
+$font-title: 'ProximaNovaA-Black';
+$font-text: 'ProximaNovaA-Regular';
+$title-font-color: $grey-100;
+$body-font-color: $grey-100;
+$input-font-color: $grey-50;
+
+// font weight
+$light: 300;
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+$blakc: 900;
+
+// font styles
+
+// texts
+@mixin H1() {
+  font-family: $font-title;
+  font-size: 96px;
+  letter-spacing: -1.25px;
+  font-stretch: normal;
+  color: $title-font-color;
+}
+@mixin H2() {
+  font-family: $font-title;
+  font-size: 36px;
+  letter-spacing: -0.47px;
+  font-stretch: normal;
+  color: $title-font-color;
+}
+@mixin H2-mobile() {
+  font-family: $font-title;
+  font-size: 32px;
+  letter-spacing: -0.47px;
+  font-stretch: normal;
+  color: $title-font-color;
+}
+@mixin subtitle() {
+  font-family: $font-text;
+  font-size: 20px;
+  letter-spacing: -0.32px;
+  font-stretch: normal;
+  color: $title-font-color;
+}
+@mixin body() {
+  font-family: $font-text;
+  font-size: 16px;
+  letter-spacing: 0px;
+  font-stretch: normal;
+  color: $body-font-color;
+}
+@mixin field() {
+  font-family: $font-text;
+  font-size: 14px;
+  color: $input-font-color;
+}
+
+// links
+@mixin link() {
+  font-family: $font-text;
+  font-size: 16px;
+  letter-spacing: 0px;
+  font-stretch: normal;
+  color: $body-font-color;
+  height: 18px;
+}
+@mixin link-active() {
+  font-family: $font-title;
+  font-size: 16px;
+  letter-spacing: 0px;
+  font-stretch: normal;
+}
+
+// buttons
+@mixin button-main() {
+  font-family: $font-text;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-stretch: normal;
+  color: white;
+}
+@mixin button-secondary() {
+  font-family: $font-text;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-stretch: normal;
+  color: $title-font-color;
+}
