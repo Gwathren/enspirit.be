@@ -19,31 +19,54 @@
     }
   }
   .illustrations-container {
+    position: absolute;
+    height: 816px;
+    width: 100%;
+    top: 0px;
     .p1 {
+      position: absolute;
       width: 430px;
       height: 430px;
+      z-index: 5;
+      right: 15%;
+      top: 250px;
     }
     .p2 {
+      position: absolute;
       width: 140px;
       height: 140px;
+      right: 10%;
+      top: 150px;
     }
     .moon {
-      height: 250px;
+      position: inherit;
+      width: 100%;
+      z-index: 4;
+      left: 0px;
+      bottom: 0px;
     }
     .s-planet {
+      position: absolute;
       width: 140px;
       height: 140px;
+      left: 5%;
+      top: 440px;
     }
     .s-l-planet {
+      position: absolute;
       width: 110px;
       height: 110px;
+      right: 40%;
+      top: 260px;
     }
     .b-planet {
-      width: 420px;
+      position: inherit;
+      width: 375px;
       height: 445px;
+      right: 0px;
+      bottom: 0px;
     }
   }
-
 }
 
 /* quick menu */
@@ -67,4 +90,71 @@
       background-color: $c-home;
     }
   }
+}
+
+@media only screen and (max-width: 1120px) {
+
+  /* header */
+  .header-homepage {
+    .illustrations-container {
+      .p1 {
+        width: 350px;
+        height: 350px;
+        right: 10%;
+        top: 390px;
+      }
+      .s-planet {
+        width: 140px;
+        height: 140px;
+        left: 5%;
+        top: 520px;
+      }
+      .s-l-planet {
+        width: 110px;
+        height: 110px;
+        right: 20%;
+        top: 350px;
+      }
+      .b-planet {
+        width: 290px;
+        height: 345px;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  /* header */
+  .header-homepage {
+    .illustrations-container {
+      .p1 {
+        width: 280px;
+        height: 280px;
+        right: 10%;
+        top: 490px;
+      }
+      .p2 {
+        width: 120px;
+        height: 120px;
+        right: 10%;
+        top: 110px;
+      }
+      .s-planet {
+        width: 90px;
+        height: 90px;
+        left: 10%;
+        top: 490px;
+      }
+      .s-l-planet {
+        display: none;
+      }
+      .b-planet {
+        width: 200px;
+        height: 245px;
+      }
+    }
+  }
+
 }

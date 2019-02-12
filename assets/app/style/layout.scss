@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  background-image: $gradient-home-body;
 }
 
 /* images */
@@ -244,22 +245,13 @@ body {
   }
 }
 
-@media only screen and (max-width: 1260px) {
-
+@media only screen and (max-width: 1259px) {
   /* contact */
   .contact {
     .background {
-      width: 570px;
-      margin: 0 auto;
-      position: relative;
-      top: -560px;
-      img {
-        position: absolute;
-        left: 510px;
-      }
+      display: none;
     }
   }
-  
 }
 
 /* footer */
