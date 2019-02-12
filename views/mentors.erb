@@ -1,81 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Enspirit</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" type="text/css" href="/assets/vendor<%= assetsSuffix %>.css"/>
-    <link rel="stylesheet" type="text/css" href="/assets/app<%= assetsSuffix %>.css"/>
-
-    <script type="text/javascript" src="/assets/vendor<%= assetsSuffix %>.js"></script>
-    <script type="text/javascript" src="/assets/app<%= assetsSuffix %>.js"></script>
-
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-  </head>
-  <body class="body-mentors">
-
-    <div class="header header-mentors">
-      <%= erb :"partials/mainnav-desktop" %>
-      <%= erb :"partials/mainnav-tablet" %>
-      <div class="section introduction">
-        <div class="text-area">
-          <p class="h1">Mentors</p>
-          <p class="subtitle">Quelques grands principes éthiques et méthodologiques, garants de la qualité de notre travail et de la confiance entre nous. Découvrez ce qui nous guide.</p>
-        </div>
-      </div>
+<div class="header header-mentors">
+  <%= erb :"partials/mainnav-desktop" %>
+  <%= erb :"partials/mainnav-tablet" %>
+  <div class="section introduction">
+    <div class="text-area">
+      <p class="h1">Mentors</p>
+      <p class="subtitle">Quelques grands principes éthiques et méthodologiques, garants de la qualité de notre travail et de la confiance entre nous. Découvrez ce qui nous guide.</p>
     </div>
+  </div>
+</div>
 
-    <div class="section module">
-      <div class="illustration">
-        <img class="fluid-image" src="/mentors/image.jpg" alt="image">
-      </div>
-      <div class="copy">
-        <p class="h2">L’informatique au service des humains, pas l’inverse</p>
-        <p class="body">Entendons-nous bien sur ce point car il est important. Nous observons souvent des choix technologiques, des moments, où l'humain perd et la machine ou l'entreprise qui l'utilise gagne. Sans comprendre encore les rouages exacts de ce rapport de force qui s'inverse étrangement, nous y sommes attentifs.</p>
-      </div>
-    </div>
+<div class="section module">
+  <div class="illustration">
+    <img class="fluid-image" src="/mentors/image.jpg" alt="image">
+  </div>
+  <div class="copy">
+    <p class="h2">L’informatique au service des humains, pas l’inverse</p>
+    <p class="body">Entendons-nous bien sur ce point car il est important. Nous observons souvent des choix technologiques, des moments, où l'humain perd et la machine ou l'entreprise qui l'utilise gagne. Sans comprendre encore les rouages exacts de ce rapport de force qui s'inverse étrangement, nous y sommes attentifs.</p>
+  </div>
+</div>
 
-    <div class="section module reverse-mobile">
-      <div class="copy">
-        <p class="h2">Une approche scientifique et rigoureuse</p>
-        <p class="body">Si nous aimons les bonnes surprises, nous avons peur des très mauvaises.</br></br>Nous cherchons en permanence l'équilibre entre bonnes intuitions, incertitudes, et analyses nécessaires d'une part, entre budget client, qualité requise et risques pris d'autre part.</p>
-      </div>
-      <div class="illustration">
-        <img class="fluid-image" src="/mentors/image.jpg" alt="image">
-      </div>
-    </div>
+<div class="section module reverse-mobile">
+  <div class="copy">
+    <p class="h2">Une approche scientifique et rigoureuse</p>
+    <p class="body">Si nous aimons les bonnes surprises, nous avons peur des très mauvaises.</br></br>Nous cherchons en permanence l'équilibre entre bonnes intuitions, incertitudes, et analyses nécessaires d'une part, entre budget client, qualité requise et risques pris d'autre part.</p>
+  </div>
+  <div class="illustration">
+    <img class="fluid-image" src="/mentors/image.jpg" alt="image">
+  </div>
+</div>
 
-    <div class="section module">
-      <div class="illustration">
-        <img class="fluid-image" src="/mentors/image.jpg" alt="image">
-      </div>
-      <div class="copy">
-        <p class="h2">Avoir un plan, et savoir le mettre en pratique</p>
-        <p class="body">La boucle de rétroaction entre avoir un plan et mettre ce plan en pratique est primordiale pour un projet technologique.</br></br>Nous sommes donc autant en réunions avec les penseurs que dans le code avec les techniciens. Entre travail de terrain et analyse plus abstraite, nous naviguons en parallèle dans les deux mondes.</p>
-      </div>
-    </div>
+<div class="section module">
+  <div class="illustration">
+    <img class="fluid-image" src="/mentors/image.jpg" alt="image">
+  </div>
+  <div class="copy">
+    <p class="h2">Avoir un plan, et savoir le mettre en pratique</p>
+    <p class="body">La boucle de rétroaction entre avoir un plan et mettre ce plan en pratique est primordiale pour un projet technologique.</br></br>Nous sommes donc autant en réunions avec les penseurs que dans le code avec les techniciens. Entre travail de terrain et analyse plus abstraite, nous naviguons en parallèle dans les deux mondes.</p>
+  </div>
+</div>
 
-    <%= erb :"partials/quick-menu" %>
-
-    <div class="contact contact-mentors" id="Contact">
-      <div class="copy">
-        <p class="h2">Et si nous travaillions ensemble ?</p>
-        <p class="body">Avez-vous un projet technologique innovant, besoin de conseils, un logiciel ou une app à créer, une équipe à coacher? Vous aimez notre esprit? Nous pouvons vous aider!</p>
-        <input class="email" type="text" name="emailaddress" placeholder="Mon adresse mail..">
-        <textarea class="message" type="text" name="message" placeholder="Mon message..."></textarea>
-        <button type="button" name="button" class="btn btn-main" href="#">Envoyer</button>
-      </div>
-      <div class="background">
-        <img src="/mentors/contact_mentors.svg" alt="Contact">
-      </div>
-    </div>
-
-    <%= erb :"partials/footer" %>
-  </body>
-</html>
+<%= erb :"partials/quick-menu" %>
+<%= erb :"partials/contact" %>
+<%= erb :"partials/footer" %>

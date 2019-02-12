@@ -37,7 +37,7 @@ module Enspirit
         etag Digest::MD5.hexdigest(tpldata.merge({
           page: page
         }).to_json), :weak
-        erb page, :locals => tpldata
+        erb page, :locals => tpldata, :layout => :"layouts/html"
       end
 
       def tpldata
