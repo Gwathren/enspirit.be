@@ -15,17 +15,28 @@ module Enspirit
       end
 
       get "/" do
-        serve(:index)
+        serve(:dashboard)
       end
 
       get %r{/([a-z]+)} do |page|
         serve(page.to_sym)
       end
 
+    public
+
+      attr_reader :page_name
+
+      def active_css_class(page)
+        %Q{class="#{page_name.to_s != page.to_s ? 'in' : ''}active"}
+      end
+
     private
 
       def serve(page)
-        etag Digest::MD5.hexdigest(tpldata.merge(page: page).to_json), :weak
+        @page_name = page.to_s
+        etag Digest::MD5.hexdigest(tpldata.merge({
+          page: page
+        }).to_json), :weak
         erb page, :locals => tpldata
       end
 
