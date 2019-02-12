@@ -15,7 +15,7 @@ module Enspirit
       end
 
       get "/" do
-        serve(:dashboard)
+        serve(:homepage)
       end
 
       get %r{/([a-z]+)} do |page|
