@@ -63,7 +63,6 @@ body {
         > a.active {
           text-decoration: none;
           @include link-active();
-          color: $c-home;
           margin-top: -1px;
         }
       }
@@ -139,7 +138,7 @@ body {
     }
   }
   .illustration {
-    width: 380px;
+    width: 430px;
   }
 }
 
@@ -153,7 +152,6 @@ body {
   .cta {
     margin-top: -28px;
     .btn-main {
-      background-color: $c-home;
       margin-bottom: 112px;
     }
   }
@@ -189,7 +187,6 @@ body {
   display: flex;
   flex-flow: column;
   padding: 88px 0;
-  height: 422px;
   .copy {
     height: 420px;
     width: 570px;
@@ -216,7 +213,6 @@ body {
       margin-bottom: 10px;
       &:focus {
         outline: none;
-        border-bottom: 2px solid $c-home;
         transition-duration: 2s;
       }
       &::placeholder {
@@ -233,14 +229,37 @@ body {
       resize: none;
     }
     .btn-main {
-      background-color: $c-home;
       margin: 20px auto 0;
     }
   }
   .background {
+    width: 570px;
+    margin: 0 auto;
     position: relative;
     top: -560px;
+    img {
+      position: absolute;
+      left: 510px;
+    }
   }
+}
+
+@media only screen and (max-width: 1260px) {
+
+  /* contact */
+  .contact {
+    .background {
+      width: 570px;
+      margin: 0 auto;
+      position: relative;
+      top: -560px;
+      img {
+        position: absolute;
+        left: 510px;
+      }
+    }
+  }
+  
 }
 
 /* footer */
@@ -308,7 +327,7 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1120px) {
 
   /* section */
   .section {
@@ -399,6 +418,13 @@ body {
     }
   }
 
+  /* contact */
+  .contact {
+    .background {
+      display: none;
+    }
+  }
+
   /* footer */
   .footer-desktop, .footer-mobile {
     display: none;
@@ -481,6 +507,9 @@ body {
       .h2 {
         @include H2-mobile();
       }
+    }
+    .illustration {
+      width: 100%;
     }
   }
 

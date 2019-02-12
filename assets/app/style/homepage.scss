@@ -5,10 +5,66 @@
 @import "text";
 
 /* body */
-body {
+.body-homepage {
   background-image: $gradient-home-body;
 }
 /* header */
-.header {
+.header-homepage {
   background-image: $gradient-home;
+  .mainnav-desktop {
+    .nav {
+      a.active {
+        color: $c-home;
+      }
+    }
+  }
+  .illustrations-container {
+    .p1 {
+      width: 430px;
+      height: 430px;
+    }
+    .p2 {
+      width: 140px;
+      height: 140px;
+    }
+    .moon {
+      height: 250px;
+    }
+    .s-planet {
+      width: 140px;
+      height: 140px;
+    }
+    .s-l-planet {
+      width: 110px;
+      height: 110px;
+    }
+    .b-planet {
+      width: 420px;
+      height: 445px;
+    }
+  }
+
+}
+
+/* quick menu */
+.quick-menu-homepage {
+  .cta {
+    .btn-main {
+      background-color: $c-home;
+    }
+  }
+}
+
+/* contact */
+.contact-homepage {
+  .copy {
+    .email, .message {
+      &:focus {
+        border-bottom: 2px solid $c-home;
+      }
+    }
+    .btn-main {
+      background-color: $c-home;
+    }
+  }
 }

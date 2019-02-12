@@ -1,0 +1,44 @@
+@import "brand";
+@import "fonts";
+@import "forms";
+@import "layout";
+@import "text";
+
+/* body */
+.body-mentors {
+  background-image: $gradient-mentors-body;
+}
+/* header */
+.header-mentors {
+  background-image: $gradient-mentors;
+  .mainnav-desktop {
+    .nav {
+      a.active {
+        color: $c-mentors;
+      }
+    }
+  }
+}
+
+/* quick menu */
+.quick-menu-mentors {
+  .cta {
+    .btn-main {
+      background-color: $c-mentors;
+    }
+  }
+}
+
+/* contact */
+.contact-mentors {
+  .copy {
+    .email, .message {
+      &:focus {
+        border-bottom: 2px solid $c-mentors;
+      }
+    }
+    .btn-main {
+      background-color: $c-mentors;
+    }
+  }
+}
