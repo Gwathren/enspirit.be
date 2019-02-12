@@ -26,7 +26,7 @@ module Enspirit
 
       def serve(page)
         etag Digest::MD5.hexdigest(tpldata.merge(page: page).to_json), :weak
-        erb page, :locals => tpldata, :layout => :html
+        erb page, :locals => tpldata
       end
 
       def tpldata
