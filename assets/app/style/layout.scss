@@ -37,6 +37,7 @@ body {
   display: flex;
   justify-content: space-between;
   .nav {
+    z-index: 2048;
     display: flex;
     > ul {
       list-style: none;

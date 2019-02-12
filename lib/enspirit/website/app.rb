@@ -15,11 +15,19 @@ module Enspirit
       end
 
       get "/" do
-        etag Digest::MD5.hexdigest(tpldata.to_json), :weak
-        erb :index, :locals => tpldata, :layout => :html
+        serve(:index)
+      end
+
+      get %r{/([a-z]+)} do |page|
+        serve(page.to_sym)
       end
 
     private
+
+      def serve(page)
+        etag Digest::MD5.hexdigest(tpldata.merge(page: page).to_json), :weak
+        erb page, :locals => tpldata, :layout => :html
+      end
 
       def tpldata
         {
