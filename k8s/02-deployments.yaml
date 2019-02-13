@@ -1,0 +1,29 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: enspirit
+  name: enspirit-website-devel
+  labels:
+    app: enspirit-website-devel
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+    app: enspirit-website-devel
+  template:
+    metadata:
+      labels:
+        app: enspirit-website-devel
+    spec:
+      imagePullSecrets:
+      - name: q8s-pull-secret
+      containers:
+      - image: enspirit/website:1.0-rc1
+        name: enspirit-website-devel
+        env:
+          - name: PASSENGER_APP_ENV
+            value: production
+        ports:
+          - name: http
+            containerPort: 80

@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: enspirit-website-devel
+  name: enspirit-website-devel
+  namespace: enspirit
+spec:
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+  selector:
+    app: enspirit-website-devel
