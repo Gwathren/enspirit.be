@@ -28,6 +28,7 @@ module Enspirit
       end
 
       get %r{/([a-z]+)} do |page|
+        not_found unless PAGE_NAMES.find{|pn| pn.to_s == page }
         serve(page.to_sym)
       end
 
