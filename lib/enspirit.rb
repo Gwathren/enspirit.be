@@ -4,6 +4,8 @@ require 'sprockets'
 require "sass"
 require 'uglifier'
 require 'digest'
+require 'yaml'
+require 'ostruct'
 module Enspirit
 
   # Root folder of the project structure

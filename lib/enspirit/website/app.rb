@@ -2,6 +2,15 @@ module Enspirit
   module Website
     class App < Sinatra::Application
 
+      PAGE_NAMES = [
+        :homepage,
+        :logiciels,
+        :mentors,
+        :partenaires,
+        :references,
+        :vision
+      ]
+
       set :root, ROOT_FOLDER
       set :raise_errors, true
       set :show_exceptions, false
@@ -25,6 +34,10 @@ module Enspirit
     public
 
       attr_reader :page_name
+
+      def page_data
+        @page_data ||= MagicData.load(ROOT_FOLDER/"data"/"#{page_name}.yml")
+      end
 
       def active_css_class(page)
         %Q{class="#{page_name.to_s != page.to_s ? 'in' : ''}active"}
