@@ -19,7 +19,7 @@ module Enspirit
     protected
 
       DEVELOPMENT = {
-        "Cache-Control" => "public, must-revalidate, max-age=1, s-max-age=1"
+        "Cache-Control" => "no-cache, no-store, max-age=0, must-revalidate"
       }
 
       PRODUCTION = {
