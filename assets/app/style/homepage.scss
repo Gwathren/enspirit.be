@@ -19,48 +19,31 @@
     }
   }
   .illustrations-container {
-    position: absolute;
-    height: 816px;
-    width: 100%;
-    top: 0px;
     .p1 {
-      position: absolute;
       width: 430px;
       height: 430px;
-      z-index: 5;
       right: 15%;
-      top: 250px;
+      bottom: 40px;
     }
     .p2 {
-      position: absolute;
-      width: 140px;
-      height: 140px;
+      width: 180px;
+      height: 180px;
       right: 10%;
-      top: 150px;
-    }
-    .moon {
-      position: inherit;
-      width: 100%;
-      z-index: 4;
-      left: 0px;
-      bottom: 0px;
+      bottom: 480px;
     }
     .s-planet {
-      position: absolute;
       width: 140px;
       height: 140px;
       left: 5%;
-      top: 440px;
+      bottom: 220px;
     }
     .s-l-planet {
-      position: absolute;
       width: 110px;
       height: 110px;
-      right: 40%;
-      top: 260px;
+      right: 35%;
+      bottom: 410px;
     }
     .b-planet {
-      position: inherit;
       width: 375px;
       height: 445px;
       right: 0px;
@@ -81,13 +64,15 @@
 /* contact */
 .contact-homepage {
   .copy {
-    .email, .message {
-      &:focus {
-        border-bottom: 2px solid $c-home;
+    .formulaire {
+      .email, .message {
+        &:focus {
+          border-bottom: 2px solid $c-home;
+        }
       }
-    }
-    .btn-main {
-      background-color: $c-home;
+      .btn-main {
+        background-color: $c-home;
+      }
     }
   }
 }
@@ -98,22 +83,23 @@
   .header-homepage {
     .illustrations-container {
       .p1 {
-        width: 350px;
-        height: 350px;
+        width: 320px;
+        height: 320px;
         right: 10%;
-        top: 390px;
+        top: 490px;
+      }
+      .p2 {
+        left: 28%;
+        top: 470px;
       }
       .s-planet {
         width: 140px;
         height: 140px;
-        left: 5%;
-        top: 520px;
+        left: 8%;
+        top: 620px;
       }
       .s-l-planet {
-        width: 110px;
-        height: 110px;
-        right: 20%;
-        top: 350px;
+        display: none;
       }
       .b-planet {
         width: 290px;
@@ -130,29 +116,29 @@
   .header-homepage {
     .illustrations-container {
       .p1 {
-        width: 280px;
-        height: 280px;
-        right: 10%;
-        top: 490px;
+        width: 230px;
+        height: 230px;
+        right: 25%;
+        top: 450px;
       }
       .p2 {
-        width: 120px;
-        height: 120px;
-        right: 10%;
-        top: 110px;
+        left: 68%;
+        top: 385px;
+        width: 100px;
+        height: 100px;
       }
       .s-planet {
         width: 90px;
         height: 90px;
         left: 10%;
-        top: 490px;
+        top: 430px;
       }
       .s-l-planet {
         display: none;
       }
       .b-planet {
-        width: 200px;
-        height: 245px;
+        width: 170px;
+        height: 135px;
       }
     }
   }

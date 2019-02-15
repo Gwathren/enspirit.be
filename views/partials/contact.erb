@@ -2,9 +2,11 @@
   <div class="copy">
     <p class="h2"><%= page_data.contact.h2 %></p>
     <p class="body"><%= page_data.contact.body %></p>
-    <input class="email" type="text" name="emailaddress" placeholder="Mon adresse mail..">
-    <textarea class="message" type="text" name="message" placeholder="Mon message..."></textarea>
-    <button type="button" name="button" class="btn btn-main" href="#">Envoyer</button>
+    <div class="formulaire">
+      <input class="email" type="text" name="emailaddress" placeholder="Mon adresse mail..">
+      <textarea class="message" type="text" name="message" placeholder="Mon message..."></textarea>
+      <button type="button" name="button" class="btn btn-main" href="#">Envoyer</button>
+    </div>
   </div>
   <div class="background">
     <img src="/<%= page_name %>/contact_<%= page_name %>.svg" alt="Contact">

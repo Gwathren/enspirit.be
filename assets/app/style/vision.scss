@@ -32,13 +32,15 @@
 /* contact */
 .contact-vision {
   .copy {
-    .email, .message {
-      &:focus {
-        border-bottom: 2px solid $c-vision;
+    .formulaire {
+      .email, .message {
+        &:focus {
+          border-bottom: 2px solid $c-vision;
+        }
       }
-    }
-    .btn-main {
-      background-color: $c-vision;
+      .btn-main {
+        background-color: $c-vision;
+      }
     }
   }
 }

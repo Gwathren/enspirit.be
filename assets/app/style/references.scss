@@ -32,13 +32,15 @@
 /* contact */
 .contact-references {
   .copy {
-    .email, .message {
-      &:focus {
-        border-bottom: 2px solid $c-references;
+    .formulaire {
+      .email, .message {
+        &:focus {
+          border-bottom: 2px solid $c-references;
+        }
       }
-    }
-    .btn-main {
-      background-color: $c-references;
+      .btn-main {
+        background-color: $c-references;
+      }
     }
   }
 }

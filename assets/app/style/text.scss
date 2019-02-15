@@ -21,11 +21,20 @@ $blakc: 900;
   font-stretch: normal;
   color: $title-font-color;
 }
+@mixin H1-mobile() {
+  font-family: $font-title;
+  font-size: 56px;
+  letter-spacing: -1.25px;
+  font-stretch: normal;
+  line-height: 1;
+  color: $title-font-color;
+}
 @mixin H2() {
   font-family: $font-title;
   font-size: 36px;
   letter-spacing: -0.47px;
   font-stretch: normal;
+  line-height: 1;
   color: $title-font-color;
 }
 @mixin H2-mobile() {
@@ -38,6 +47,13 @@ $blakc: 900;
 @mixin subtitle() {
   font-family: $font-text;
   font-size: 20px;
+  letter-spacing: -0.32px;
+  font-stretch: normal;
+  color: $title-font-color;
+}
+@mixin subtitle-mobile() {
+  font-family: $font-text;
+  font-size: 18px;
   letter-spacing: -0.32px;
   font-stretch: normal;
   color: $title-font-color;
@@ -62,13 +78,13 @@ $blakc: 900;
   letter-spacing: 0px;
   font-stretch: normal;
   color: $body-font-color;
-  height: 18px;
 }
-@mixin link-active() {
-  font-family: $font-title;
-  font-size: 16px;
+@mixin link-mobile() {
+  font-family: $font-text;
+  font-size: 14px;
   letter-spacing: 0px;
   font-stretch: normal;
+  color: $body-font-color;
 }
 
 // buttons

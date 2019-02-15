@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1435px" height="250px" viewBox="0 0 1435 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>montain</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="101.961203%" y1="-4.4408921e-14%" x2="-39.2075232%" y2="-2.77555756e-14%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#D5FAFA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="31.37684%" y1="-70.5843632%" x2="31.37684%" y2="70.5843632%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#D5FAFA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-39.2075232%" y1="-1.66533454e-14%" x2="101.961203%" y2="-4.99600361e-14%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#D5FAFA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="98.2229949%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#FDFDFD" offset="0%"></stop>
+            <stop stop-color="#EFFCFD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="illus-vision" transform="translate(0.000000, -1486.000000)">
+            <g id="montain" transform="translate(0.941473, 1486.000000)">
+                <path d="M0.0585266827,0.221207586 C75.7446236,42.6164293 184.808794,61.9339708 327.251038,58.1738322 L135.745947,153.320681 L0.0585266827,0.221207586 Z" id="Path-108" fill="url(#linearGradient-1)"></path>
+                <path d="M1231.8781,99.8427172 C1241.58671,115.215117 1252.27851,126.23465 1263.9535,132.901316 C1281.46598,142.901316 1311.95829,137.279419 1355.42501,136.401316 C1384.40282,135.815915 1353.91231,159.815915 1263.9535,208.401316 L1202.15524,142.901316 L1231.8781,99.8427172 Z" id="Path-109" fill="url(#linearGradient-2)"></path>
+                <path d="M673.698663,47.669147 C732.708954,55.8818976 790.131926,75.4737801 845.96758,106.444795 C901.803233,137.415809 846.213714,155.025097 679.199024,159.272658 L673.698663,47.669147 Z" id="Path-110" fill="url(#linearGradient-3)"></path>
+                <path d="M0.0862649554,2.84217094e-14 C168.425458,161.326643 310.251215,45.8310556 329.99401,57.4408001 C357.034148,73.3417459 470.997134,178.82489 499.213803,162.82489 C527.430471,146.82489 644.963157,37.2308353 674.36304,47.8949863 C703.762923,58.5591372 736.652288,89.9267472 814.871487,99.9267472 C893.090686,109.926747 972.693645,183.543633 1010.44957,180.677672 C1048.20549,177.811711 1182.31655,98.2943571 1232.38593,99.9267472 C1224.60479,123.187728 1230.07966,150.398895 1280.06882,163.559137 C1309.11422,171.205685 1353.36155,124.293052 1412.8108,22.8212406 C1418.65188,12.8513045 1427.7437,6.02770434 1440.08626,2.35043994 L1440.08626,250.001316 L0.0862649554,250.001316 C-0.0287549851,114.103397 -0.0287549851,30.7696245 0.0862649554,2.84217094e-14 Z" id="Path-107" fill="url(#linearGradient-4)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

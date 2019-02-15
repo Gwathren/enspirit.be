@@ -32,13 +32,15 @@
 /* contact */
 .contact-mentors {
   .copy {
-    .email, .message {
-      &:focus {
-        border-bottom: 2px solid $c-mentors;
+    .formulaire {
+      .email, .message {
+        &:focus {
+          border-bottom: 2px solid $c-mentors;
+        }
       }
-    }
-    .btn-main {
-      background-color: $c-mentors;
+      .btn-main {
+        background-color: $c-mentors;
+      }
     }
   }
 }

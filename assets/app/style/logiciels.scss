@@ -32,13 +32,15 @@
 /* contact */
 .contact-logiciels {
   .copy {
-    .email, .message {
-      &:focus {
-        border-bottom: 2px solid $c-logiciels;
+    .formulaire {
+      .email, .message {
+        &:focus {
+          border-bottom: 2px solid $c-logiciels;
+        }
       }
-    }
-    .btn-main {
-      background-color: $c-logiciels;
+      .btn-main {
+        background-color: $c-logiciels;
+      }
     }
   }
 }
