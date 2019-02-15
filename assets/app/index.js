@@ -1,3 +1,10 @@
+var clickMe = document.getElementById("clickMe");
+
+$(clickMe).click(function() {
+  $('.mainnav-tablet').toggleClass('mainnav-tablet-open');
+});
+
+
 var controller = new ScrollMagic.Controller();
 
 var plan1 = document.getElementById("plan1"),
