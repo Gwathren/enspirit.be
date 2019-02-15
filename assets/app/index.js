@@ -1,10 +1,22 @@
-var clickMe = document.getElementById("clickMe");
+/* test 1 -- fonction dans html */
+function changeMainnavClass() {
+  var NAME = document.getElementsByClassName("mainnav-tablet")
+  NAME.className="mainnav-tablet-open"
+}
 
+/* test 2 -- addEventListener */
+document.getElementById("clickMe").addEventListener("click", function(){
+  document.getElementsByClassName("mainnav-tablet").toggleClass('mainnav-tablet-open');
+});
+
+/* test 3 -- jQuery */
+var clickMe = document.getElementById("clickMe");
 $(clickMe).click(function() {
-  $('.mainnav-tablet').toggleClass('mainnav-tablet-open');
+  $('.mainnav-tablet').toggleClass('.mainnav-tablet-open');
 });
 
 
+/* test 4 -- ScrollMagic */
 var controller = new ScrollMagic.Controller();
 
 var plan1 = document.getElementById("plan1"),
