@@ -27,7 +27,7 @@ $(function(){
     var controller2 = new ScrollMagic.Controller();
     var scene2 = new ScrollMagic.Scene({
        offset: 0,
-       duration:600
+       duration:800
      })
     .setTween("#animate-1", {y:15})
     /*.addIndicators({name:"-1"})*/
@@ -37,7 +37,7 @@ $(function(){
     var controller3 = new ScrollMagic.Controller();
     var scene3 = new ScrollMagic.Scene({
        offset: 0,
-       duration:600
+       duration:800
      })
     .setTween("#animate1", {y:0})
     /*.addIndicators({name:"1"})*/
@@ -47,7 +47,7 @@ $(function(){
     var controller4 = new ScrollMagic.Controller();
     var scene4 = new ScrollMagic.Scene({
        offset: 0,
-       duration:600
+       duration:800
      })
     .setTween("#animate2", {y:50})
     /*.addIndicators({name:"2"})*/
@@ -57,7 +57,7 @@ $(function(){
     var controller5 = new ScrollMagic.Controller();
     var scene5 = new ScrollMagic.Scene({
       offset: 0,
-      duration:600
+      duration:800
     })
     .setTween("#animate3", {y:40})
     /*.addIndicators({name:"3"})*/
@@ -67,7 +67,7 @@ $(function(){
     var controller6 = new ScrollMagic.Controller();
     var scene6 = new ScrollMagic.Scene({
       offset: 0,
-      duration:600
+      duration:800
     })
     .setTween("#animate4", {y:30})
     /*.addIndicators({name:"4"})*/
@@ -77,7 +77,7 @@ $(function(){
     var controller7 = new ScrollMagic.Controller();
     var scene7 = new ScrollMagic.Scene({
       offset: 0,
-      duration:600
+      duration:800
     })
     .setTween("#animate4", {y:15})
     /*.addIndicators({name:"4"})*/
