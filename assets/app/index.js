@@ -19,7 +19,7 @@ $(function(){
        offset: 0,
        duration:600
      })
-    .setTween("#animate-2", {y:30})
+    .setTween("#animate-2", {y:-30})
     /*.addIndicators({name:"-2"})*/
     .addTo(controller1);
 
@@ -29,7 +29,7 @@ $(function(){
        offset: 0,
        duration:800
      })
-    .setTween("#animate-1", {y:15})
+    .setTween("#animate-1", {y:-15})
     /*.addIndicators({name:"-1"})*/
     .addTo(controller2);
 
@@ -49,7 +49,7 @@ $(function(){
        offset: 0,
        duration:800
      })
-    .setTween("#animate2", {y:50})
+    .setTween("#animate2", {y:30})
     /*.addIndicators({name:"2"})*/
     .addTo(controller4);
 
@@ -59,7 +59,7 @@ $(function(){
       offset: 0,
       duration:800
     })
-    .setTween("#animate3", {y:40})
+    .setTween("#animate3", {y:25})
     /*.addIndicators({name:"3"})*/
     .addTo(controller5);
 
@@ -69,7 +69,7 @@ $(function(){
       offset: 0,
       duration:800
     })
-    .setTween("#animate4", {y:30})
+    .setTween("#animate4", {y:20})
     /*.addIndicators({name:"4"})*/
     .addTo(controller6);
 
