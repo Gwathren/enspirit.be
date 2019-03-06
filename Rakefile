@@ -1,19 +1,11 @@
 $:.unshift File.expand_path('../lib', __FILE__)
 require 'path'
+require 'enspirit'
 
 def shell(*cmds)
   cmd = cmds.join("\n")
   puts cmd
   system cmd
-end
-
-def require_enspirit
-  require 'enspirit'
-  include Enspirit
-end
-
-task :require do
-  require_enspirit
 end
 
 #

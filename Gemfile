@@ -1,8 +1,9 @@
 source "https://rubygems.org"
 
-gem "startback", "~> 0.3", ">= 0.3.1"
+gem "startback", "~> 0.4.0"
 gem 'path', '~> 2.0'
-gem 'sprockets', '~> 3.7'
+gem 'sprockets', '4.0.0.beta8'
+gem 'babel-transpiler'
 gem 'uglifier', '~> 3.1'
 gem 'sass', '~> 3.4'
 

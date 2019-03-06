@@ -19,7 +19,7 @@ spec:
       imagePullSecrets:
       - name: q8s-pull-secret
       containers:
-      - image: enspirit/website:1.0-rc1
+      - image: enspirit/website:latest
         name: enspirit-website-devel
         env:
           - name: PASSENGER_APP_ENV

@@ -13,4 +13,3 @@ module Enspirit
     end # class MagicData
   end # module Website
 end # module Enspirit
-

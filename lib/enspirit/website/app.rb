@@ -16,12 +16,8 @@ module Enspirit
       set :show_exceptions, false
       set :views, ROOT_FOLDER/"views"
 
-      use Caching, development?
-
-      get "/assets/*" do
-        env["PATH_INFO"].sub!("/assets", "")
-        Assets.call(env)
-      end
+      use Startback::Web::AutoCaching, development?
+      use Startback::Web::MagicAssets, ASSETS_CONFIG
 
       get "/" do
         serve(:homepage)
