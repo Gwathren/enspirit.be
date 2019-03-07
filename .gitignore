@@ -2,3 +2,4 @@
 public/assets/*
 Dockefile.built
 Dockerfile.log
+k8s/ci-n-cd/build-resource-template.yaml

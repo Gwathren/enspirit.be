@@ -1,0 +1,22 @@
+apiVersion: beta.q8s.quadrabee.com/v1
+kind: WebHook
+metadata:
+  name: build-enspirit-website
+  namespace: enspirit
+spec:
+  bindings:
+    - name: build-enspirit-website-latest
+      condition: |
+        headers["x-github-event"] == "push" &&
+        body.repository.full_name == "enspirit/enspirit.be" &&
+        body.ref == "refs/heads/new-website"
+      actions:
+        - type: instantiate
+          template: build-enspirit-website
+          vars:
+            - name: gitRepo
+              value: git@github.com:enspirit/enspirit.be.git
+            - name: gitRef
+              value: new-website
+            - name: dockerTag
+              value: staging

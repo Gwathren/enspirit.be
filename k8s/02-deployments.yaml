@@ -4,8 +4,6 @@ kind: Deployment
 metadata:
   namespace: enspirit
   name: enspirit-website-devel
-  labels:
-    app: enspirit-website-devel
 spec:
   replicas: 1
   selector:
@@ -19,7 +17,7 @@ spec:
       imagePullSecrets:
       - name: q8s-pull-secret
       containers:
-      - image: enspirit/website:latest
+      - image: enspirit/website:staging
         name: enspirit-website-devel
         env:
           - name: PASSENGER_APP_ENV

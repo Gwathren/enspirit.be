@@ -2,10 +2,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  labels:
-    name: enspirit-website-devel
-  name: enspirit-website-devel
   namespace: enspirit
+  name: enspirit-website-devel
 spec:
   ports:
   - name: http
