@@ -26,4 +26,4 @@ devel:
 	bundle install
 	bundle exec rackup
 
-push: $1/Dockerfile.pushed
+push: Dockerfile.pushed
