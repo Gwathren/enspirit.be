@@ -12,7 +12,7 @@ spec:
     gitKeyFromSecret:
       secretName: enspirit-website-deploy-key
       subPath: id_rsa
-    makeTarget: push-images
+    makeTarget: push
     docker:
       registry: q8s.quadrabee.com
       user: deploy@enspirit.be
