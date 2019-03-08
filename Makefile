@@ -23,7 +23,7 @@ clean:
 	rm -rf public/assets/*
 
 devel:
-	bundle install
+	bundle install --path vendor/bundle
 	bundle exec rackup
 
 push: Dockerfile.pushed
