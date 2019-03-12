@@ -10,7 +10,9 @@
 }
 /* header */
 .header-mentors {
-  background-image: $gradient-mentors;
+  background-image: url(../mentors/background_desktop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   .mainnav-desktop {
     .nav {
       a.active {

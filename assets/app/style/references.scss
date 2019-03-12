@@ -18,24 +18,6 @@
       }
     }
   }
-  .illustrations-container {
-    .floor {
-      width: 100%;
-      bottom: 70px;
-    }
-    .floor-mobile {
-      display: none;
-    }
-    .p {
-      width: 583px;
-      height: 535px;
-      right: 9%;
-      bottom: 250px;
-    }
-    .p-mobile {
-      display: none;
-    }
-  }
 }
 
 /* quick menu */
@@ -58,71 +40,6 @@
       }
       .btn-main {
         background-color: $c-references;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1400px) {
-
-  /* header */
-  .header-references {
-    .illustrations-container {
-      .floor {
-        bottom: 65px;
-      }
-      .p {
-        right: 2%;
-        bottom: 178px;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1120px) {
-
-  /* header */
-  .header-references {
-    .illustrations-container {
-      .floor {
-        display: none;
-      }
-      .floor-mobile {
-        display: flex;
-        width: 100%;
-        bottom: 0px;
-      }
-      .p {
-        display: none;
-      }
-      .p-mobile {
-        display: flex;
-        width: 435px;
-        height: 265px;
-        right: 25%;
-        bottom: 75px;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 865px) {
-
-  /* header */
-  .header-references {
-    .illustrations-container {
-      .floor {
-        display: none;
-      }
-      .floor-mobile {
-        bottom: 30px;
-      }
-      .p-mobile {
-        display: flex;
-        width: 435px;
-        height: 265px;
-        right: 20%;
-        bottom: 75px;
       }
     }
   }

@@ -1,0 +1,95 @@
+grammar Finitio::Syntax::Lexer
+
+  # LEXER (keywords)
+
+  rule keyword
+    'and' | 'or' | 'not' | 'true' | 'false'
+  end
+
+  # LEXER (names)
+
+  rule var_name
+    /[a-z]+/
+  end
+
+  rule contract_name
+    /[a-z][a-z0-9]*/
+  end
+
+  rule constraint_name
+    /[a-z][a-zA-Z_]*/
+  end
+
+  rule attribute_name
+    /[a-z_][a-zA-Z0-9_]*/
+  end
+
+  rule type_name
+    /[A-Z][a-zA-Z]+(\.[A-Z][a-zA-Z]+)*/
+  end
+
+  rule builtin_type_name
+    /[a-zA-Z0-9:]+/
+  end
+
+  rule import_url
+    (!space .)+
+  end
+
+  # LEXER symbols
+
+  rule equal
+    spacing '=' spacing
+  end
+
+  rule dots
+    spacing '...' spacing
+  end
+
+  rule opt_comma
+    spacing ',' spacing | spacing
+  end
+
+  rule comma
+    spacing ',' spacing
+  end
+
+  rule pipe
+    spacing '|' spacing
+  end
+
+  rule colon
+    spacing ':' spacing
+  end
+
+  rule open_metadata
+    spacing '/-' spacing
+  end
+
+  rule close_metadata
+    spacing '-/' spacing
+  end
+
+  # LEXER (spacing & comments)
+
+  rule spacing
+    (spaces | comment)*
+  end
+
+  rule comment
+    '#' (![\n] .)* [\n]?
+  end
+
+  rule spaces
+    space+
+  end
+
+  rule space
+    [ \t\n]
+  end
+
+  rule eof
+    !.
+  end
+
+end

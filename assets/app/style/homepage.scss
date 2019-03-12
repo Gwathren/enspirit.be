@@ -19,38 +19,6 @@
       }
     }
   }
-  .illustrations-container {
-    .p1 {
-      width: 430px;
-      height: 430px;
-      right: 15%;
-      bottom: 40px;
-    }
-    .p2 {
-      width: 180px;
-      height: 180px;
-      right: 10%;
-      bottom: 480px;
-    }
-    .s-planet {
-      width: 140px;
-      height: 140px;
-      left: 5%;
-      bottom: 220px;
-    }
-    .s-l-planet {
-      width: 110px;
-      height: 110px;
-      right: 35%;
-      bottom: 410px;
-    }
-    .b-planet {
-      width: 375px;
-      height: 445px;
-      right: 0px;
-      bottom: 10px;
-    }
-  }
 }
 
 /* module */
@@ -79,72 +47,6 @@
       }
       .btn-main {
         background-color: $c-home;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1120px) {
-
-  /* header */
-  .header-homepage {
-    .illustrations-container {
-      .p1 {
-        width: 340px;
-        height: 340px;
-        right: 10%;
-        bottom: 30px;
-      }
-      .p2 {
-        width: 200px;
-        height: 200px;
-        right: 60%;
-        bottom: 150px;
-      }
-      .s-planet {
-        left: 8%;
-        bottom: 110px;
-      }
-      .s-l-planet {
-        right: 5%;
-      }
-      .b-planet {
-        width: 250px;
-        height: 300px;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 767px) {
-
-  /* header */
-  .header-homepage {
-    .illustrations-container {
-      .p1 {
-        width: 230px;
-        height: 230px;
-        right: 25%;
-        bottom: -10px;
-      }
-      .p2 {
-        width: 100px;
-        height: 100px;
-        right: 10%;
-        bottom: 190px;
-      }
-      .s-planet {
-        width: 90px;
-        height: 90px;
-        left: 10%;
-        bottom: 140px;
-      }
-      .s-l-planet {
-        display: none;
-      }
-      .b-planet {
-        width: 120px;
-        height: 135px;
       }
     }
   }

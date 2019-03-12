@@ -1,0 +1,11 @@
+CHANGELOG.md
+Gemfile
+Gemfile.lock
+lib/**/*
+LICENCE.md
+Manifest.txt
+finitio.gemspec
+Rakefile
+README.md
+spec/**/*
+tasks/**/*
