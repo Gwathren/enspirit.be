@@ -7,9 +7,12 @@ spec:
   bindings:
     - name: build-enspirit-website-latest
       condition: |
-        headers["x-github-event"] == "push" &&
+        (headers["x-github-event"] == "push" &&
         body.repository.full_name == "enspirit/enspirit.be" &&
-        body.ref == "refs/heads/new-website"
+        body.ref == "refs/heads/new-website") ||
+        (headers["x-github-event"] == "pull_request" &&
+        body.repository.full_name == "enspirit/enspirit.be" &&
+        body.head.ref == "refs/heads/new-website"
       actions:
         - type: instantiate
           template: build-enspirit-website
