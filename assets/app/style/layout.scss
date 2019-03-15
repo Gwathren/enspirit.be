@@ -52,8 +52,8 @@ body {
 .mainnav-desktop {
   max-width: 1024px;
   margin: 0 auto;
-  height: 90px;
-  padding: 20px 0;
+  height: 47px;
+  padding: 40px 0;
   display: flex;
   justify-content: space-between;
   .nav {
@@ -64,15 +64,15 @@ body {
       display: flex;
       margin: 0;
       padding: 0;
-      height: 90px;
+      height: 47px;
       > li {
         margin-right: 16px;
-        margin-top: 50px;
+        margin-top: 18px;
         &:first-child {
           margin-top: 0px;
           margin-right: 50px;
           img {
-            height: 90px;
+            height: 47px;
           }
         }
         &:last-child {
@@ -91,9 +91,9 @@ body {
     z-index: 2048;
     margin: 0;
     padding: 0;
-    height: 90px;
+    height: 47px;
     > li {
-      margin-top: 50px;
+      margin-top: 18px;
       > a {
         text-decoration: none;
         @include link();
@@ -250,7 +250,7 @@ body {
   flex-flow: column;
   padding: 88px 0;
   .copy {
-    height: 420px;
+    height: auto;
     width: 570px;
     margin: 0 auto;
     text-align: center;
@@ -313,15 +313,6 @@ body {
   }
 }
 
-@media only screen and (max-width: 1259px) {
-  /* contact */
-  .contact {
-    .background {
-      display: none;
-    }
-  }
-}
-
 /* footer */
 .footer {
   background-color: white;
@@ -329,27 +320,26 @@ body {
 .footer-desktop {
   max-width: 1024px;
   margin: 0 auto;
-  height: 150px;
   padding: 0;
   display: flex;
   justify-content: space-between;
   .nav {
     display: flex;
-    height: 150px;
+    height: 95px;
     > ul {
       list-style: none;
       display: flex;
       margin: 0;
-      padding: 30px 0;
-      height: 90px;
+      padding: 24px 0;
+      height: 47px;
       > li {
         margin-right: 16px;
-        margin-top: 50px;
+        margin-top: 16px;
         &:first-child {
           margin-top: 0px;
           margin-right: 50px;
           > img.logo {
-            height: 90px;
+            height: 47px;
           }
         }
         &:last-child {
@@ -366,10 +356,10 @@ body {
     list-style: none;
     display: flex;
     margin: 0;
-    padding: 30px 0;
-    height: 90px;
+    padding: 24px 0;
+    height: 47px;
     > li {
-      margin-top: 50px;
+      margin-top: 16px;
       > a {
         text-decoration: none;
         @include link();
@@ -379,6 +369,15 @@ body {
 }
 .footer-tablet, .footer-mobile {
   display: none;
+}
+
+@media only screen and (max-width: 1259px) {
+  /* contact */
+  .contact {
+    .background {
+      display: none;
+    }
+  }
 }
 
 @media only screen and (max-width: 1120px) {
@@ -421,8 +420,8 @@ body {
   .mainnav-tablet {
     max-width: 600px;
     margin: 0 auto;
-    height: 90px;
-    padding: 20px 0;
+    height: 47px;
+    padding: 32px 0;
     display: flex;
     justify-content: space-between;
     .logo {
@@ -431,14 +430,14 @@ body {
         height: 100%;
         width: 124px;
         > img {
-          height: 90px;
+          height: 47px;
         }
       }
     }
     .menu-container {
       z-index: 4000;
       height: 30px;
-      margin-top: 40px;
+      margin-top: 8px;
       a {
         height: 30px;
         display: flex;
@@ -462,7 +461,7 @@ body {
             display: block;
             position: absolute;
             transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-            top: 63px;
+            top: 42px;
             width: 30px;
             height: 4px;
             margin: 0;
@@ -472,7 +471,7 @@ body {
             opacity: 100%;
             position: absolute;
             transition: opacity .2s ease-in-out;
-            top: 73px;
+            top: 53px;
             width: 30px;
             height: 4px;
             margin: 0;
@@ -483,7 +482,7 @@ body {
             transform: translate(0, 1px);
             transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
             position: absolute;
-            top: 83px;
+            top: 63px;
             width: 30px;
             height: 4px;
             margin: 0;
@@ -496,7 +495,7 @@ body {
           .top {
             display: block;
             position: absolute;
-            top: 72px;
+            top: 52px;
             transform: rotate(-45deg);
             transition: all 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
             width: 30px;
@@ -511,7 +510,7 @@ body {
           .bottom {
             display: block;
             position: absolute;
-            top: 72px;
+            top: 52px;
             transform: rotate(45deg);
             transition: all 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
             width: 30px;
@@ -616,27 +615,26 @@ body {
   .footer-tablet {
     max-width: 600px;
     margin: 0 auto;
-    height: 150px;
     padding: 0;
     display: flex;
     justify-content: space-between;
     .nav {
       display: flex;
-      height: 150px;
+      height: 95px;
       > ul {
         list-style: none;
         display: flex;
         margin: 0;
-        padding: 30px 0;
-        height: 90px;
+        padding: 24px 0;
+        height: 47px;
         > li {
           margin-right: 16px;
-          margin-top: 50px;
+          margin-top: 16px;
           &:first-child {
             margin-top: 0px;
             margin-right: 34px;
             > img.logo {
-              height: 90px;
+              height: 47px;
             }
           }
           &:last-child {
@@ -756,9 +754,9 @@ body {
   .contact {
     max-width: 100%;
     margin: 0 24px;
-    padding: 70px 0;
+    padding: 70px 0 60px;
     .copy {
-      height: 472px;
+      height: auto;
       width: 100%;
       .h2 {
         @include H2-mobile();
@@ -789,14 +787,15 @@ body {
     height: 100%;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    align-items: center;
     .logo {
       display: flex;
-      height: 150px;
+      height: 95px;
       margin: 0;
       img {
-        padding: 30px 0;
-        height: 90px;
+        padding: 24px 0;
+        height: 47px;
       }
     }
     ul.links {
@@ -804,10 +803,10 @@ body {
       display: flex;
       flex-flow: column;
       margin: 0 0 0 24px;
-      padding: 24px 0;
-      height: 90px;
+      padding: 10px 0;
+      height: 100%;
       > li {
-        margin-top: 10px;
+        margin-top: 6px;
         &:first-child {
           margin-top: 0px;
         }
