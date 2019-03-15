@@ -31,6 +31,7 @@ ADD . /home/app
 RUN chown -R app:app /home/app
 
 # Build the assets
+RUN bundle install
 RUN bundle exec rake test
 RUN bundle exec rake assets:compile
 

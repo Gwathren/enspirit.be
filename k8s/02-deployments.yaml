@@ -17,7 +17,7 @@ spec:
       imagePullSecrets:
       - name: q8s-pull-secret
       containers:
-      - image: enspirit/website:staging
+      - image: q8s.quadrabee.com/enspirit/website:staging
         name: enspirit-website-devel
         env:
           - name: PASSENGER_APP_ENV
