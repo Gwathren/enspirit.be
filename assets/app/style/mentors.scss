@@ -8,9 +8,10 @@
 .body-mentors {
   background-image: $gradient-mentors-body;
 }
+
 /* header */
 .header-mentors {
-  background-image: url(../mentors/background_desktop.png);
+  background-image: url(../mentors/background_XL.png);
   background-size: contain;
   background-repeat: no-repeat;
   .mainnav-desktop {
@@ -44,5 +45,14 @@
         background-color: $c-mentors;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  /* header */
+  .header-mentors {
+    background-image: url(../mentors/background_desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
