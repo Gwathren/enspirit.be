@@ -8,7 +8,8 @@ module Enspirit
         :mentors,
         :partenaires,
         :references,
-        :vision
+        :vision,
+        :services
       ]
 
       set :root, ROOT_FOLDER

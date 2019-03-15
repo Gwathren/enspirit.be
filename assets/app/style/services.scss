@@ -1,0 +1,40 @@
+/* body */
+.body-services {
+  background-image: $gradient-services-body;
+}
+/* header */
+.header-services {
+  background-image: $gradient-services;
+  .mainnav-desktop {
+    .nav {
+      a.active {
+        color: $c-services;
+      }
+    }
+  }
+}
+
+/* quick menu */
+.quick-menu-services {
+  .cta {
+    .btn-main {
+      background-color: $c-services;
+    }
+  }
+}
+
+/* contact */
+.contact-services {
+  .copy {
+    .formulaire {
+      .email, .message {
+        &:focus {
+          border-bottom: 2px solid $c-services;
+        }
+      }
+      .btn-main {
+        background-color: $c-services;
+      }
+    }
+  }
+}
