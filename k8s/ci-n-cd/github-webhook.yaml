@@ -20,3 +20,19 @@ spec:
               value: new-website
             - name: dockerTag
               value: staging
+
+    - name: build-enspirit-website-tags
+      condition: |
+        headers["x-github-event"] == "create" &&
+        body.ref_type == "tag" &&
+        body.repository.full_name == "enspirit/enspirit.be"
+      actions:
+        - type: instantiate
+          template: build-enspirit-website
+          vars:
+            - name: gitRepo
+              value: git@github.com:enspirit/enspirit.be.git
+            - name: gitRef
+              valueFrom: "'refs/tags/' + body.ref"
+            - name: dockerTag
+              valueFrom: body.ref
