@@ -24,6 +24,6 @@ clean:
 
 devel:
 	bundle install --path vendor/bundle
-	bundle exec rackup
+	TALKTOME_DEBUG=1 bundle exec rackup
 
 push: Dockerfile.pushed

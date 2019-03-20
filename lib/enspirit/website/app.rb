@@ -2,6 +2,8 @@ module Enspirit
   module Website
     class App < Sinatra::Application
 
+      class InvalidEmail < Startback::Errors::BadRequestError; end
+
       PAGE_NAMES = [
         :homepage,
         :logiciels,
@@ -27,6 +29,27 @@ module Enspirit
       get %r{/([a-z]+)} do |page|
         not_found unless PAGE_NAMES.find{|pn| pn.to_s == page }
         serve(page.to_sym)
+      end
+
+      post '/contact' do
+        begin
+          body = request.body.read
+          info = JSON.parse(body)
+          raise InvalidEmail unless info['email'] && info['email'] =~ /^[^@]+@[^@]+$/
+          user = {
+            email: "info@enspirit.be"
+          }
+          data = {
+            email: info['email'],
+            message: info['message'] || ''
+          }
+          TALKTOME.talktome("contact", user, data, [:email]){|m|
+            m.from = "noreply@enspirit.be"
+          }
+          [ 200, { "Content-Type" => "text/plain"}, ["Ok"] ]
+        rescue JSON::ParserError, InvalidEmail => ex
+          [ 400, { "Content-Type" => "text/plain"}, ["Invalid email address"] ]
+        end
       end
 
     public

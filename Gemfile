@@ -6,6 +6,7 @@ gem 'sprockets', '4.0.0.beta8'
 gem 'babel-transpiler'
 gem 'uglifier', '~> 3.1'
 gem 'sass', '~> 3.4'
+gem "talktome", "~> 0.2.0"
 
 group :test do
   gem 'rake', '~> 12.0'

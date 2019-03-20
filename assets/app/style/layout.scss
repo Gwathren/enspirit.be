@@ -300,6 +300,15 @@ body {
         margin: 20px auto 0;
       }
     }
+    .direct-contact {
+      @include body();
+      width: 460px;
+      margin: auto;
+      margin-top: 20px;
+    }
+  }
+  a {
+    color: inherit;
   }
   .background {
     width: 570px;
@@ -312,6 +321,13 @@ body {
       width: 402px;
       height: 364px;
     }
+  }
+  .if-error,
+  .if-error a {
+    color: $c-error;
+  }
+  .if-success {
+    color: $c-success;
   }
 }
 

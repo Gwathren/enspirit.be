@@ -1,12 +1,21 @@
-<div class="contact contact-<%= page_name %>" id="Contact">
+<div class="contact contact-<%= page_name %>" id="contact">
   <div class="copy">
     <p class="h2"><%= page_data.contact.h2 %></p>
     <p class="body"><%= page_data.contact.body %></p>
-    <div class="formulaire">
-      <input class="email" type="text" name="emailaddress" placeholder="Mon adresse mail..">
-      <textarea class="message" type="text" name="message" placeholder="Mon message..."></textarea>
-      <button type="button" name="button" class="btn btn-main" href="#">Envoyer</button>
-    </div>
+    <p class="if-error" style="display: none;">Oups, une erreur est survenue, mais vous pouver nous
+      contacter en direct sur <a href="mailto:info@enspirit.be">info@enspirit.be</a>
+      (le lien contient d'ailleurs le contenu de votre message!)
+    </p>
+    <form class="formulaire no-success">
+      <input required class="email" type="email" name="email" placeholder="Mon adresse mail..">
+      <textarea required class="message" name="message" placeholder="Mon message..."></textarea>
+      <button type="submit" name="button" class="btn btn-main" href="#">Envoyer</button>
+    </form>
+    <p class="if-success" style="display: none;">Merci pour votre message, nous reprendrons contact aussi vite que possible!</p>
+    <p class="no-success direct-contact">
+      <small>Vous préférez un contact plus direct? Sentez-vous libre de nous contacter
+      à votre meilleure convenance au 0477/24.58.61 ou sur <a href="mailto:info@enspirit.be">info@enspirit.be</a></small>
+    </p>
   </div>
   <div class="background">
     <img src="/<%= page_name %>/contact_<%= page_name %>.png" alt="Contact">

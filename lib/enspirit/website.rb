@@ -1,6 +1,7 @@
 require 'startback'
 require 'startback/web/magic_assets'
 require 'startback/web/auto_caching'
+require 'talktome'
 
 module Enspirit
   module Website
@@ -15,6 +16,8 @@ module Enspirit
         :js_compressor => Uglifier.new(mangle: true)
       }
     }
+
+    TALKTOME = ::Talktome::Client::Local.new(ROOT_FOLDER/'talktome')
 
   end # module Website
 end # module Enspirit
