@@ -19,9 +19,9 @@ spec:
       containers:
       - image: q8s.quadrabee.com/enspirit/website:staging
         name: enspirit-website-devel
-        env:
-          - name: PASSENGER_APP_ENV
-            value: production
+        envFrom:
+          - configMapRef:
+              name: enspirit-website-config-map
         ports:
           - name: http
             containerPort: 80
