@@ -1,0 +1,30 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  namespace: enspirit
+  name: enspirit-website
+  annotations:
+    kubernetes.io/tls-acme: "true"
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  tls:
+  - secretName: sss-www.enspirit.be
+    hosts:
+    - www.enspirit.be
+    - enspirit.be
+  rules:
+  - host: www.enspirit.be
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: enspirit-website
+          servicePort: 80
+  - host: enspirit.be
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: enspirit-website
+          servicePort: 80

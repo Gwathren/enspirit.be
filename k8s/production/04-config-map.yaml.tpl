@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: enspirit-website-devel-config-map
+  name: enspirit-website-config-map
   namespace: enspirit
 data:
   PASSENGER_APP_ENV: production

@@ -3,25 +3,25 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   namespace: enspirit
-  name: enspirit-website-devel
+  name: enspirit-website
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: enspirit-website-devel
+      app: enspirit-website
   template:
     metadata:
       labels:
-        app: enspirit-website-devel
+        app: enspirit-website
     spec:
       imagePullSecrets:
       - name: q8s-pull-secret
       containers:
       - image: q8s.quadrabee.com/enspirit/website:1.0-rc3
-        name: enspirit-website-devel
+        name: enspirit-website
         envFrom:
           - configMapRef:
-              name: enspirit-website-devel-config-map
+              name: enspirit-website-config-map
         ports:
           - name: http
             containerPort: 80
