@@ -25,6 +25,9 @@
   cursor: pointer;
   border: solid 1px $grey-50;
   color: $grey-100;
-  height: 56px;
+  display: inline-block;
+  height: auto;
+  min-width: auto;
+  text-decoration: none;
   @include button-secondary();
 }
