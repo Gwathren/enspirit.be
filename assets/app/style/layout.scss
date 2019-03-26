@@ -120,11 +120,11 @@ body {
     p {
       padding: 0;
     }
-    .h1 {
+    h1 {
       margin: 24px 0 0 0;
       @include H1();
     }
-    .h1-mobile {
+    h1.mobile {
       margin: 24px 0 0 0;
       @include H1-mobile();
       width: 530px;
@@ -192,7 +192,7 @@ body {
       margin: 0;
       padding: 0;
     }
-    .h2 {
+    h2 {
       @include H2();
     }
     .body {
@@ -258,7 +258,7 @@ body {
     text-align: center;
     position: relative;
     z-index: 2;
-    .h2 {
+    h3 {
       @include H2();
       padding: 0;
       margin: 0 auto 24px;
@@ -747,11 +747,11 @@ body {
   /* introduction */
   .introduction {
     .text-area {
-      .h1 {
+      h1 {
         max-width: 100%;
         @include H1-mobile();
       }
-      .h1-mobile, .h2 {
+      h1.mobile, h2 {
         max-width: 100%;
         @include H2-mobile();
       }
@@ -768,7 +768,7 @@ body {
     flex-flow: column-reverse;
     .copy {
       max-width: 100%;
-      .h2 {
+      h2 {
         @include H2-mobile();
       }
     }
@@ -806,7 +806,7 @@ body {
     .copy {
       height: auto;
       width: 100%;
-      .h2 {
+      h2 {
         @include H2-mobile();
       }
       .body {
