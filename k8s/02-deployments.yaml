@@ -17,7 +17,7 @@ spec:
       imagePullSecrets:
       - name: q8s-pull-secret
       containers:
-      - image: q8s.quadrabee.com/enspirit/website:1.0-rc2
+      - image: q8s.quadrabee.com/enspirit/website:1.0-rc3
         name: enspirit-website-devel
         envFrom:
           - configMapRef:
