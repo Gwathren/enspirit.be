@@ -1,0 +1,44 @@
+@import "brand";
+@import "fonts";
+@import "forms";
+@import "layout";
+@import "text";
+
+.container {
+
+  h1 {
+    @include H1();
+  }
+
+  h1.mobile {
+    @include H1-mobile();
+  }
+
+  h2 {
+    @include H2();
+  }
+
+  h2.mobile {
+    @include H2-mobile();
+  }
+
+  .subtitle {
+    @include subtitle();
+  }
+
+  .subtitle-mobile {
+    @include subtitle-mobile();
+  }
+
+  .quotes {
+    .quotation-marks {
+      @include subtitle();
+      color: $c-vision !important;
+      font-weight: $bold;
+    }
+    .copy {
+      @include subtitle();
+      text-align: center;
+    }
+  }
+}
